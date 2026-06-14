@@ -1,0 +1,86 @@
+solid fin
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex 0.0000 0.0000 0.0000
+      vertex 50.0000 0.0000 0.0000
+      vertex 50.0000 0.0000 3.0000
+    endloop
+  endfacet
+  facet normal 0.0000 -1.0000 0.0000
+    outer loop
+      vertex 0.0000 0.0000 0.0000
+      vertex 50.0000 0.0000 3.0000
+      vertex 0.0000 0.0000 3.0000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex 15.0000 40.0000 0.0000
+      vertex 15.0000 40.0000 3.0000
+      vertex 40.0000 40.0000 3.0000
+    endloop
+  endfacet
+  facet normal 0.0000 1.0000 0.0000
+    outer loop
+      vertex 15.0000 40.0000 0.0000
+      vertex 40.0000 40.0000 3.0000
+      vertex 40.0000 40.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex 0.0000 0.0000 0.0000
+      vertex 15.0000 40.0000 0.0000
+      vertex 40.0000 40.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 -1.0000
+    outer loop
+      vertex 0.0000 0.0000 0.0000
+      vertex 40.0000 40.0000 0.0000
+      vertex 50.0000 0.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex 0.0000 0.0000 3.0000
+      vertex 50.0000 0.0000 3.0000
+      vertex 40.0000 40.0000 3.0000
+    endloop
+  endfacet
+  facet normal 0.0000 0.0000 1.0000
+    outer loop
+      vertex 0.0000 0.0000 3.0000
+      vertex 40.0000 40.0000 3.0000
+      vertex 15.0000 40.0000 3.0000
+    endloop
+  endfacet
+  facet normal -0.9363 0.3511 0.0000
+    outer loop
+      vertex 0.0000 0.0000 0.0000
+      vertex 0.0000 0.0000 3.0000
+      vertex 15.0000 40.0000 3.0000
+    endloop
+  endfacet
+  facet normal -0.9363 0.3511 0.0000
+    outer loop
+      vertex 0.0000 0.0000 0.0000
+      vertex 15.0000 40.0000 3.0000
+      vertex 15.0000 40.0000 0.0000
+    endloop
+  endfacet
+  facet normal 0.9701 0.2425 0.0000
+    outer loop
+      vertex 50.0000 0.0000 0.0000
+      vertex 40.0000 40.0000 0.0000
+      vertex 40.0000 40.0000 3.0000
+    endloop
+  endfacet
+  facet normal 0.9701 0.2425 -0.0000
+    outer loop
+      vertex 50.0000 0.0000 0.0000
+      vertex 40.0000 40.0000 3.0000
+      vertex 50.0000 0.0000 3.0000
+    endloop
+  endfacet
+endsolid fin
