@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CanSat Ground Control Software — Real-time telemetry monitoring, mission operations, GPS tracking, and 3D orientation visualization dashboard.">
+  <title>CanSat GCS — Ground Control Software</title>
+
+  <!-- Google Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Leaflet.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛰️</text></svg>">
+</head>
+<body>
+
+  <!-- ==================== DASHBOARD ==================== -->
+  <div id="dashboard">
+
+    <!-- ===== TOP BAR ===== -->
+    <header class="topbar panel" id="topbar">
+      <div class="topbar-brand">
+        <div>
+          <div class="logo-text">CANSAT GCS</div>
+          <div class="subtitle">GROUND CONTROL SOFTWARE v1.0</div>
+        </div>
+      </div>
+
+      <div class="topbar-controls">
+        <button class="btn btn-success" id="btn-start-telemetry" title="Start telemetry stream">
+          ▶ START
+        </button>
+        <button class="btn btn-info" id="btn-serial-connect" title="Connect Web Serial">
+          🔌 SERIAL
+        </button>
+        <button class="btn btn-warning" id="btn-ws-connect" title="Connect WebSocket Bridge">
+          🌐 WEBSOCKET
+        </button>
+        <button class="btn btn-danger" id="btn-stop-telemetry" title="Stop telemetry stream">
+          ■ STOP
+        </button>
+        <button class="btn btn-primary" id="btn-export-csv" title="Export telemetry to CSV">
+          📄 CSV
+        </button>
+        <button class="btn btn-primary" id="btn-export-graph" title="Export graphs as PNG">
+          📊 GRAPH
+        </button>
+        <button class="btn btn-warning" id="btn-sync-time" title="Sync mission clock to PC time">
+          🕐 SYNC
+        </button>
+        <button class="btn btn-warning" id="btn-reset-packet" title="Reset packet counter">
+          🔄 RESET
+        </button>
+      </div>
+
+      <div class="topbar-info">
+        <div id="connection-status" class="connection-status disconnected">
+          <span class="status-dot"></span>
+          <span class="status-text">DISCONNECTED</span>
+        </div>
+        <div class="mission-clock" id="mission-clock">00:00:00</div>
+        <div class="met-clock">
+          <span class="label">MET</span>
+          <span id="met-clock">00:00:00</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== MISSION CONTROL BAR ===== -->
+    <div class="mission-bar panel" id="mission-bar">
+      <span class="panel-title" style="margin-bottom:0;"><span class="icon">🎛️</span> MISSION CONTROL</span>
+      <div class="separator"></div>
+
+      <button class="btn btn-warning" id="btn-separation" title="Manual payload separation">
+        🔓 SEPARATION
+      </button>
+      <button class="btn btn-danger" id="btn-parachute" title="Emergency parachute deployment">
+        🪂 E-PARACHUTE
+      </button>
+      <button class="btn btn-primary" id="btn-redundant" title="Redundant activation command">
+        ⚡ REDUNDANT
+      </button>
+
+      <div class="separator"></div>
+
+      <div class="command-status" id="command-status">AWAITING COMMAND</div>
+
+      <div class="separator"></div>
+
+      <!-- Fault injection (dev/test tools) -->
+      <span style="font-family:var(--font-mono);font-size:0.55rem;color:var(--text-muted);letter-spacing:1px;">FAULT INJECT:</span>
+      <button class="btn btn-icon btn-danger" data-fault="gpsDropout" title="Toggle GPS dropout fault" style="font-size:0.6rem;padding:4px 8px;">GPS</button>
+      <button class="btn btn-icon btn-danger" data-fault="descentRateFault" title="Toggle descent rate fault" style="font-size:0.6rem;padding:4px 8px;">RATE</button>
+    </div>
+
+    <!-- ===== LEFT COLUMN — TELEMETRY ===== -->
+    <div class="left-column">
+
+      <!-- Container Telemetry -->
+      <div class="panel" id="panel-container-telem">
+        <div class="panel-title"><span class="icon">📡</span> CONTAINER TELEMETRY</div>
+        <div class="telemetry-grid">
+          <div class="telem-item">
+            <span class="telem-label">TEAM ID</span>
+            <span class="telem-value" id="telem-team-id">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">MISSION TIME</span>
+            <span class="telem-value" id="telem-mission-time">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">PACKET #</span>
+            <span class="telem-value" id="telem-packet-count">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">MODE</span>
+            <span class="telem-value" id="telem-mode">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">STATE</span>
+            <span class="telem-value" id="telem-state">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">CMD ECHO</span>
+            <span class="telem-value" id="telem-cmd-echo">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">ALTITUDE</span>
+            <span class="telem-value" id="telem-altitude">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">PRESSURE</span>
+            <span class="telem-value" id="telem-pressure">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">TEMPERATURE</span>
+            <span class="telem-value" id="telem-temperature">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">VOLTAGE</span>
+            <span class="telem-value" id="telem-voltage">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">DESCENT RATE</span>
+            <span class="telem-value" id="telem-descent-rate">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">ROTATION</span>
+            <span class="telem-value" id="telem-rotation">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">GPS LAT</span>
+            <span class="telem-value" id="telem-gps-lat">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">GPS LON</span>
+            <span class="telem-value" id="telem-gps-lon">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">GPS ALT</span>
+            <span class="telem-value" id="telem-gps-alt">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">GPS SATS</span>
+            <span class="telem-value" id="telem-gps-sats">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">TILT X</span>
+            <span class="telem-value" id="telem-tilt-x">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">TILT Y</span>
+            <span class="telem-value" id="telem-tilt-y">—</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Payload Telemetry -->
+      <div class="panel" id="panel-payload-telem">
+        <div class="panel-title"><span class="icon">🛰️</span> PAYLOAD TELEMETRY</div>
+        <div class="telemetry-grid">
+          <div class="telem-item">
+            <span class="telem-label">ALTITUDE</span>
+            <span class="telem-value" id="telem-pl-altitude">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">PRESSURE</span>
+            <span class="telem-value" id="telem-pl-pressure">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">TEMPERATURE</span>
+            <span class="telem-value" id="telem-pl-temperature">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">VOLTAGE</span>
+            <span class="telem-value" id="telem-pl-voltage">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">TILT X</span>
+            <span class="telem-value" id="telem-pl-tilt-x">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">TILT Y</span>
+            <span class="telem-value" id="telem-pl-tilt-y">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">ROTATION</span>
+            <span class="telem-value" id="telem-pl-rotation">—</span>
+          </div>
+          <div class="telem-item">
+            <span class="telem-label">SEPARATED</span>
+            <span class="telem-value" id="telem-pl-separated">—</span>
+          </div>
+          <div class="telem-item full-width">
+            <span class="telem-label">PARACHUTE</span>
+            <span class="telem-value" id="telem-pl-parachute">—</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Error Log -->
+      <div class="panel" id="panel-error-log">
+        <div class="panel-title"><span class="icon">📋</span> ERROR LOG</div>
+        <div class="error-log" id="error-log">
+          <div class="error-log-entry">
+            <span class="log-time">T+0.0s</span>
+            <span class="log-msg" style="color:var(--green);">System initialized — All clear</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== CENTER COLUMN — GRAPHS ===== -->
+    <div class="center-column">
+
+      <!-- Altitude Graph -->
+      <div class="panel graph-panel" id="panel-graph-altitude">
+        <div class="graph-header">
+          <div class="panel-title" style="margin-bottom:0;"><span class="icon">📈</span> ALTITUDE</div>
+          <div class="current-value" style="color:#00e5ff;"><span id="value-altitude">0.00</span><span class="unit"> m</span></div>
+        </div>
+        <div class="graph-container">
+          <canvas id="chart-altitude"></canvas>
+        </div>
+      </div>
+
+      <!-- Pressure Graph -->
+      <div class="panel graph-panel" id="panel-graph-pressure">
+        <div class="graph-header">
+          <div class="panel-title" style="margin-bottom:0;"><span class="icon">📈</span> PRESSURE</div>
+          <div class="current-value" style="color:#ffb300;"><span id="value-pressure">0.00</span><span class="unit"> hPa</span></div>
+        </div>
+        <div class="graph-container">
+          <canvas id="chart-pressure"></canvas>
+        </div>
+      </div>
+
+      <!-- Temperature Graph -->
+      <div class="panel graph-panel" id="panel-graph-temperature">
+        <div class="graph-header">
+          <div class="panel-title" style="margin-bottom:0;"><span class="icon">🌡️</span> TEMPERATURE</div>
+          <div class="current-value" style="color:#ff6d00;"><span id="value-temperature">0.00</span><span class="unit"> °C</span></div>
+        </div>
+        <div class="graph-container">
+          <canvas id="chart-temperature"></canvas>
+        </div>
+      </div>
+
+      <!-- Descent Rate Graph -->
+      <div class="panel graph-panel" id="panel-graph-descent">
+        <div class="graph-header">
+          <div class="panel-title" style="margin-bottom:0;"><span class="icon">⬇️</span> DESCENT RATE</div>
+          <div class="current-value" style="color:#00ff88;"><span id="value-descentRate">0.00</span><span class="unit"> m/s</span></div>
+        </div>
+        <div class="graph-container">
+          <canvas id="chart-descentRate"></canvas>
+        </div>
+      </div>
+
+      <!-- Battery Graph -->
+      <div class="panel graph-panel" id="panel-graph-voltage">
+        <div class="graph-header">
+          <div class="panel-title" style="margin-bottom:0;"><span class="icon">🔋</span> BATTERY</div>
+          <div class="current-value" style="color:#ffe100;"><span id="value-voltage">0.00</span><span class="unit"> V</span></div>
+        </div>
+        <div class="graph-container">
+          <canvas id="chart-voltage"></canvas>
+        </div>
+      </div>
+
+      <!-- Empty slot for balance -->
+      <div class="panel flex-center" style="opacity:0.5;">
+        <div style="text-align:center;">
+          <div style="font-size:1.5rem;margin-bottom:6px;">🛰️</div>
+          <div style="font-family:var(--font-mono);font-size:0.6rem;color:var(--text-muted);letter-spacing:1px;">TELEMETRY READY</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="right-column">
+
+      <!-- GPS Tracking Map -->
+      <div class="panel" id="panel-map">
+        <div class="panel-title"><span class="icon">🗺️</span> GPS TRACKING</div>
+        <div class="map-container" id="tracking-map"></div>
+        <div class="map-overlay">
+          <div class="coord">
+            <span class="coord-label">LAT</span>
+            <span id="map-lat">28.613900</span>
+          </div>
+          <div class="coord">
+            <span class="coord-label">LON</span>
+            <span id="map-lon">77.209000</span>
+          </div>
+          <div class="coord">
+            <span class="coord-label">ALT</span>
+            <span id="map-alt">0.0</span>m
+          </div>
+          <div class="coord">
+            <span class="coord-label">SATS</span>
+            <span id="map-sats">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3D Orientation -->
+      <div class="panel" id="panel-orientation">
+        <div class="panel-title"><span class="icon">🧭</span> ORIENTATION</div>
+        <div class="orientation-container" id="orientation-3d"></div>
+        <div class="orientation-values">
+          <div class="orient-item">
+            <div class="orient-label">ROLL</div>
+            <div class="orient-value orient-roll" id="orient-roll">0.0°</div>
+          </div>
+          <div class="orient-item">
+            <div class="orient-label">PITCH</div>
+            <div class="orient-value orient-pitch" id="orient-pitch">0.0°</div>
+          </div>
+          <div class="orient-item">
+            <div class="orient-label">YAW</div>
+            <div class="orient-value orient-yaw" id="orient-yaw">0.0°/s</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Video -->
+      <div class="panel" id="panel-video">
+        <div class="panel-title"><span class="icon">📹</span> VIDEO FEED</div>
+        <div class="video-container">
+          <video id="video-feed" autoplay playsinline muted></video>
+          <div class="video-placeholder" id="video-placeholder">
+            <span class="cam-icon">📷</span>
+            <span>NO VIDEO SIGNAL</span>
+          </div>
+          <span class="video-badge offline" id="video-badge">OFFLINE</span>
+        </div>
+        <div class="video-controls">
+          <select id="camera-select">
+            <option value="">Select Camera</option>
+          </select>
+          <button class="btn btn-success btn-icon" id="btn-video-start" title="Start video">▶</button>
+          <button class="btn btn-danger btn-icon" id="btn-video-stop" title="Stop video">■</button>
+          <button class="btn btn-primary btn-icon" id="btn-video-screenshot" title="Screenshot">📸</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== STATUS BAR ===== -->
+    <footer class="status-bar panel" id="status-bar">
+      <!-- Error Code Display -->
+      <div class="error-code-display">
+        <span class="ec-label">ERROR CODE</span>
+        <div class="error-digit-group">
+          <div class="error-digit-wrapper">
+            <div class="error-digit ok" id="error-digit-0">0</div>
+            <span class="error-digit-label">RATE</span>
+          </div>
+          <div class="error-digit-wrapper">
+            <div class="error-digit ok" id="error-digit-1">0</div>
+            <span class="error-digit-label">GPS</span>
+          </div>
+          <div class="error-digit-wrapper">
+            <div class="error-digit ok" id="error-digit-2">0</div>
+            <span class="error-digit-label">SEP</span>
+          </div>
+          <div class="error-digit-wrapper">
+            <div class="error-digit ok" id="error-digit-3">0</div>
+            <span class="error-digit-label">CHUTE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission Status Info -->
+      <div class="status-info">
+        <span>PACKETS:<span class="stat-value" id="status-packets">0</span></span>
+        <span>RATE:<span class="stat-value" id="status-rate">— Hz</span></span>
+        <span>LOG:<span class="stat-value" id="status-log-count">0</span></span>
+      </div>
+
+      <!-- Mission Phase Badge -->
+      <div class="mission-phase pre-launch" id="mission-phase">PRE-LAUNCH</div>
+    </footer>
+
+  </div>
+
+  <!-- ===== CONFIRMATION MODAL ===== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <h3 id="modal-title">CONFIRM ACTION</h3>
+      <p id="modal-message">Are you sure?</p>
+      <div class="modal-actions">
+        <button class="btn btn-danger" id="modal-confirm">CONFIRM</button>
+        <button class="btn btn-primary" id="modal-cancel">CANCEL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== EXTERNAL LIBRARIES ===== -->
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <!-- Leaflet.js -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- ===== APP MODULES ===== -->
+  <script src="js/telemetry.js"></script>
+  <script src="js/errors.js"></script>
+  <script src="js/export.js"></script>
+  <script src="js/graphs.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/orientation.js"></script>
+  <script src="js/video.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
