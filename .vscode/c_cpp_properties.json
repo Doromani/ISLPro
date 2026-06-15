@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "name": "Arduino (arduino:avr:uno)",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\data\\packages\\arduino\\hardware\\avr\\1.8.8\\cores\\arduino",
+        "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\data\\packages\\arduino\\hardware\\avr\\1.8.8\\variants\\standard",
+        "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\data\\packages\\arduino\\hardware\\avr\\1.8.8\\libraries\\**",
+        "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\avr\\include\\**",
+        "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\i686-w64-mingw32\\avr\\include\\**",
+        "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\include\\**",
+        "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\lib\\gcc\\avr\\7.3.0\\include\\**",
+        "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\user\\libraries\\**"
+      ],
+      "defines": [
+        "ARDUINO=10819",
+        "USBCON",
+        "ARDUINO_ARCH_AVR",
+        "ARDUINO_AVR_UNO",
+        "__AVR__",
+        "F_CPU=16000000L"
+      ],
+      "compilerPath": "c:\\ISLProjects\\cansat-gcs\\.arduino-cli\\data\\packages\\arduino\\tools\\avr-gcc\\7.3.0-atmel3.6.1-arduino7\\bin\\avr-g++.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}

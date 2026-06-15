@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/telemetry_simulator.ino.hex'
+elf = 'build/telemetry_simulator.ino.elf'
