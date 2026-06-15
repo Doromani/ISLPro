@@ -1,0 +1,601 @@
+
+======================================================================
+[2026-06-12 19:18:38.777] Arduino Extension 启动 (v0.2.1)
+  平台: win32 x64
+  VS Code: 1.123.0
+  Node: v24.15.0
+======================================================================
+[2026-06-12 19:18:38.779][INFO] 板卡缓存目录: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli
+[2026-06-12 19:18:38.779][INFO] [BoardListHistory] 已初始化，加载了 0 个板卡记录，0 个端口记录
+[2026-06-12 19:18:38.781][INFO] [BuildOutputWebview] 编译日志缓存路径: c:\ISLProjects\cansat-gcs\.vscode\build-output.log
+[2026-06-12 19:18:38.782][INFO] 刷新板卡列表...
+[2026-06-12 19:18:38.782][INFO] 获取板卡列表...
+[2026-06-12 19:18:38.782][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.801][INFO] 刷新板卡管理器...
+[2026-06-12 19:18:38.802][INFO] 创建板卡缓存目录: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli
+[2026-06-12 19:18:38.802][INFO] 获取已安装的平台列表...
+[2026-06-12 19:18:38.802][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.807][INFO] 获取已安装库列表...
+[2026-06-12 19:18:38.808][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.818][INFO] 已注册调试命令
+[2026-06-12 19:18:38.819][INFO] 正在检测 Arduino CLI...
+[2026-06-12 19:18:38.819][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.824][INFO] Arduino CLI 插件激活完成
+[2026-06-12 19:18:38.838][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.838][INFO] 开始自动检测 Arduino CLI...
+[2026-06-12 19:18:38.839][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.851][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.852][INFO] 开始自动检测 Arduino CLI...
+[2026-06-12 19:18:38.852][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.858][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.859][INFO] 开始自动检测 Arduino CLI...
+[2026-06-12 19:18:38.859][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.871][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.871][INFO] 开始自动检测 Arduino CLI...
+[2026-06-12 19:18:38.871][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.883][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.884][WARN] 未能自动检测到 Arduino CLI
+[2026-06-12 19:18:38.884][ERROR] 获取板卡列表失败: CliNotReadyError: Arduino CLI 未配置或路径无效，请先执行 "Arduino: Configure CLI Path"
+[2026-06-12 19:18:38.885][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:18:38.885][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.901][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.901][WARN] 未能自动检测到 Arduino CLI
+[2026-06-12 19:18:38.902][ERROR] 获取已安装库列表失败: CliNotReadyError: Arduino CLI 未配置或路径无效，请先执行 "Arduino: Configure CLI Path"
+[2026-06-12 19:18:38.902][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.902][WARN] 未能自动检测到 Arduino CLI
+[2026-06-12 19:18:38.903][ERROR] 获取平台列表失败: CliNotReadyError: Arduino CLI 未配置或路径无效，请先执行 "Arduino: Configure CLI Path"
+[2026-06-12 19:18:38.917][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.917][WARN] 未能自动检测到 Arduino CLI
+[2026-06-12 19:18:38.917][WARN] Arduino CLI 未找到
+[2026-06-12 19:18:38.922][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.923][INFO] 开始自动检测 Arduino CLI...
+[2026-06-12 19:18:38.923][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:18:38.954][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:18:38.954][WARN] 未能自动检测到 Arduino CLI
+[2026-06-12 19:18:38.954][ERROR] 获取板卡列表失败: CliNotReadyError: Arduino CLI 未配置或路径无效，请先执行 "Arduino: Configure CLI Path"
+[2026-06-12 19:18:38.955][INFO] 加载了 0 个平台，共 0 个板卡
+[2026-06-12 19:18:49.365][INFO] 正在停止所有 Arduino CLI 进程...
+[2026-06-12 19:18:49.378][INFO] 已创建 Copilot 指令文件: c:\ISLProjects\cansat-gcs\.github\copilot-instructions.md
+[2026-06-12 19:18:50.379][INFO] 所有 CLI 进程已停止
+[2026-06-12 19:18:50.379][INFO] 开始下载 Arduino CLI...
+[2026-06-12 19:18:50.379][INFO] 平台: win32-x64
+[2026-06-12 19:18:50.379][INFO] 下载 URL: https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Windows_64bit.zip
+[2026-06-12 19:18:50.379][INFO] 安装目录: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli
+[2026-06-12 19:18:52.787][INFO] 重定向到: https://downloads.arduino.cc/arduino-cli/arduino-cli_1.5.1_Windows_64bit.zip
+[2026-06-12 19:18:55.765][INFO] 解压文件: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\download.zip -> c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli
+[2026-06-12 19:19:05.446][INFO] Arduino CLI 1.5.1 安装成功: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 19:19:05.446][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 19:19:05.546][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 19:19:05.646][INFO] CLI 路径已更新为: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 19:19:05.646][INFO] 刷新板卡列表...
+[2026-06-12 19:19:05.646][INFO] 获取板卡列表...
+[2026-06-12 19:19:05.648][INFO] 已创建项目本地 Arduino CLI 配置目录: c:\ISLProjects\cansat-gcs\.arduino-cli
+[2026-06-12 19:19:05.648][INFO] 使用全局共享下载目录: C:\Users\Lenovo\.arduino-cli-shared\downloads
+[2026-06-12 19:19:05.651][INFO] 已创建/更新项目本地 Arduino CLI 配置: c:\ISLProjects\cansat-gcs\.arduino-cli\arduino-cli.yaml
+[2026-06-12 19:19:05.651][INFO] 库目录: c:\ISLProjects\cansat-gcs\.arduino-cli\user\libraries
+[2026-06-12 19:19:05.651][INFO] 下载目录: C:\Users\Lenovo\.arduino-cli-shared\downloads
+[2026-06-12 19:19:05.652][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 19:19:05.677][INFO] [BoardDiscovery] 启动板卡实时发现...
+[2026-06-12 19:19:05.686][INFO] [BoardDiscovery] 监听进程已启动
+[2026-06-12 19:19:05.687][INFO] 获取板卡列表...
+[2026-06-12 19:19:05.687][INFO] 获取已安装的平台列表...
+[2026-06-12 19:19:05.688][INFO] 获取已安装库列表...
+[2026-06-12 19:19:05.688][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 19:19:05.694][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core list --format json
+[2026-06-12 19:19:05.705][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib list --format json
+[2026-06-12 19:19:14.086][INFO] 找到 0 个已安装的库
+[2026-06-12 19:19:14.087][INFO] 搜索库: (全部)...
+[2026-06-12 19:19:14.087][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib search --format json
+[2026-06-12 19:19:15.241][INFO] 找到 0 个已安装的平台
+[2026-06-12 19:19:15.242][INFO] 搜索平台（全部）...
+[2026-06-12 19:19:15.242][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core search --format json
+[2026-06-12 19:19:15.858][INFO] 获取已安装的平台列表...
+[2026-06-12 19:19:15.859][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core list --format json
+[2026-06-12 19:19:16.381][INFO] 找到 0 个已安装的平台
+[2026-06-12 19:19:16.382][INFO] 找到 36 个可用平台
+[2026-06-12 19:19:16.382][INFO] 加载了 36 个平台
+[2026-06-12 19:19:18.688][INFO] 获取已安装库列表...
+[2026-06-12 19:19:18.689][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib list --format json
+[2026-06-12 19:19:18.724][INFO] 找到 0 个端口
+[2026-06-12 19:19:18.725][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:19:18.725][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 19:19:18.746][INFO] 找到 0 个端口
+[2026-06-12 19:19:18.746][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:19:18.747][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 19:19:19.176][INFO] 找到 0 个已安装的板卡
+[2026-06-12 19:19:19.177][INFO] 加载了 0 个平台，共 0 个板卡
+[2026-06-12 19:19:19.191][INFO] 找到 0 个已安装的库
+[2026-06-12 19:19:19.388][INFO] 搜索到 9518 个库
+[2026-06-12 19:19:19.409][INFO] 加载了 9518 个库
+[2026-06-12 19:19:19.411][INFO] 找到 0 个已安装的板卡
+[2026-06-12 19:19:19.412][INFO] 加载了 0 个平台，0 个端口
+[2026-06-12 19:19:37.756][INFO] 正在停止所有 Arduino CLI 进程...
+[2026-06-12 19:19:37.756][INFO] [BoardDiscovery] 停止板卡发现监听
+[2026-06-12 19:19:37.756][INFO] [BoardDiscovery] 终止进程树，PID: 17160
+[2026-06-12 19:19:37.781][INFO] 已停止板卡发现监听
+[2026-06-12 19:19:38.189][INFO] [BoardDiscovery] 进程退出，代码: 1
+[2026-06-12 19:19:38.789][INFO] 所有 CLI 进程已停止
+[2026-06-12 19:19:38.789][INFO] 开始下载 Arduino CLI...
+[2026-06-12 19:19:38.789][INFO] 平台: win32-x64
+[2026-06-12 19:19:38.790][INFO] 下载 URL: https://downloads.arduino.cc/arduino-cli/arduino-cli_latest_Windows_64bit.zip
+[2026-06-12 19:19:38.790][INFO] 安装目录: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli
+[2026-06-12 19:19:39.482][INFO] 重定向到: https://downloads.arduino.cc/arduino-cli/arduino-cli_1.5.1_Windows_64bit.zip
+[2026-06-12 19:19:43.561][INFO] 解压文件: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\download.zip -> c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli
+[2026-06-12 19:19:46.654][INFO] Arduino CLI 1.5.1 安装成功: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 19:19:46.654][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 19:19:46.734][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 19:19:46.748][INFO] CLI 路径已更新为: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 19:19:46.748][INFO] 刷新板卡列表...
+[2026-06-12 19:19:46.748][INFO] 获取板卡列表...
+[2026-06-12 19:19:46.748][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 19:19:46.752][INFO] [BoardDiscovery] 启动板卡实时发现...
+[2026-06-12 19:19:46.758][INFO] [BoardDiscovery] 监听进程已启动
+[2026-06-12 19:19:46.758][INFO] 获取板卡列表...
+[2026-06-12 19:19:46.758][INFO] 获取已安装的平台列表...
+[2026-06-12 19:19:46.758][INFO] 获取已安装库列表...
+[2026-06-12 19:19:46.759][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 19:19:46.763][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core list --format json
+[2026-06-12 19:19:46.768][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib list --format json
+[2026-06-12 19:19:47.358][INFO] 找到 0 个已安装的库
+[2026-06-12 19:19:47.359][INFO] 搜索库: (全部)...
+[2026-06-12 19:19:47.359][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib search --format json
+[2026-06-12 19:19:47.364][INFO] 找到 0 个已安装的平台
+[2026-06-12 19:19:47.364][INFO] 搜索平台（全部）...
+[2026-06-12 19:19:47.364][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core search --format json
+[2026-06-12 19:19:47.761][INFO] 获取已安装的平台列表...
+[2026-06-12 19:19:47.761][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core list --format json
+[2026-06-12 19:19:48.165][INFO] 找到 0 个已安装的平台
+[2026-06-12 19:19:48.166][INFO] 找到 36 个可用平台
+[2026-06-12 19:19:48.166][INFO] 加载了 36 个平台
+[2026-06-12 19:19:48.378][INFO] 找到 0 个端口
+[2026-06-12 19:19:48.379][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:19:48.379][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 19:19:48.386][INFO] 找到 0 个端口
+[2026-06-12 19:19:48.387][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:19:48.387][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 19:19:48.784][INFO] 找到 0 个已安装的板卡
+[2026-06-12 19:19:48.785][INFO] 加载了 0 个平台，共 0 个板卡
+[2026-06-12 19:19:48.798][INFO] 找到 0 个已安装的板卡
+[2026-06-12 19:19:48.798][INFO] 加载了 0 个平台，0 个端口
+[2026-06-12 19:19:49.380][INFO] 获取已安装库列表...
+[2026-06-12 19:19:49.381][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib list --format json
+[2026-06-12 19:19:49.740][INFO] 找到 0 个已安装的库
+[2026-06-12 19:19:49.781][INFO] 搜索到 9518 个库
+[2026-06-12 19:19:49.788][INFO] 加载了 9518 个库
+[2026-06-12 19:20:01.490][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:20:01.491][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 19:20:01.842][INFO] 找到 0 个已安装的板卡
+[2026-06-12 19:20:15.984][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:20:15.985][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 19:20:16.327][INFO] 找到 0 个已安装的板卡
+[2026-06-12 19:21:18.453][INFO] 正在自动检测 Arduino CLI...
+[2026-06-12 19:21:18.453][INFO] 开始自动检测 Arduino CLI...
+[2026-06-12 19:21:18.454][INFO] 验证 Arduino CLI 路径: arduino-cli
+[2026-06-12 19:21:18.494][WARN] Arduino CLI 路径无效: arduino-cli, 错误: 命令执行失败 (退出码: 1): 'arduino-cli' is not recognized as an internal or external command,
+operable program or batch file.
+
+[2026-06-12 19:21:18.495][WARN] 未能自动检测到 Arduino CLI
+[2026-06-12 19:21:58.256][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:21:58.256][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 19:21:58.634][INFO] 找到 0 个已安装的板卡
+[2026-06-12 19:32:40.272][INFO] 获取所有已安装的板卡...
+[2026-06-12 19:32:40.273][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 19:32:40.648][INFO] 找到 27 个已安装的板卡
+[2026-06-12 19:32:50.530][INFO] 获取板卡详情: arduino:avr:uno...
+[2026-06-12 19:32:50.532][INFO] 已创建配置目录: c:\ISLProjects\cansat-gcs\.arduino
+[2026-06-12 19:32:50.533][INFO] 已保存项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-12 19:32:50.534][INFO] [BoardListHistory] 记录板卡选择: arduino:avr:uno
+[2026-06-12 19:32:50.534][INFO] 已选择板卡: Arduino UNO (arduino:avr:uno)
+[2026-06-12 19:32:50.538][INFO] 解析板卡 uno: core=arduino, variant=standard
+[2026-06-12 19:32:50.540][INFO] 添加核心路径: c:\ISLProjects\cansat-gcs\.arduino-cli\data\packages\arduino\hardware\avr\1.8.8\cores\arduino
+[2026-06-12 19:32:50.540][INFO] 添加变体路径: c:\ISLProjects\cansat-gcs\.arduino-cli\data\packages\arduino\hardware\avr\1.8.8\variants\standard
+[2026-06-12 19:32:50.540][INFO] 添加平台库路径: c:\ISLProjects\cansat-gcs\.arduino-cli\data\packages\arduino\hardware\avr\1.8.8\libraries
+[2026-06-12 19:32:50.568][INFO] 添加用户库路径: c:\ISLProjects\cansat-gcs\.arduino-cli\user\libraries
+[2026-06-12 19:32:50.569][INFO] 解析板卡 uno: core=arduino, variant=standard
+[2026-06-12 19:32:50.583][INFO] 已生成 IntelliSense 配置: c:\ISLProjects\cansat-gcs\.vscode\c_cpp_properties.json
+[2026-06-12 19:32:50.583][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board details --fqbn arduino:avr:uno --format json
+[2026-06-12 19:32:50.604][INFO] IntelliSense 配置已自动更新，板卡: arduino:avr:uno
+[2026-06-12 19:32:50.974][INFO] 板卡 Arduino UNO 有 0 个配置选项
+[2026-06-12 19:32:50.975][INFO] 板卡详情已缓存: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino_avr_uno.json
+[2026-06-12 19:32:50.975][INFO] 获取板卡详情成功: Arduino UNO, 0 个配置选项
+[2026-06-12 20:00:45.660][INFO] Arduino CLI 插件正在停用...
+[2026-06-12 20:00:45.660][INFO] 串口监视器(Terminal)已释放
+[2026-06-12 20:00:45.660][INFO] 串口监视器(WebView)已释放
+[2026-06-12 20:00:45.661][INFO] [BoardDiscovery] 释放资源...
+[2026-06-12 20:00:45.661][INFO] [BoardDiscovery] 停止板卡发现监听
+[2026-06-12 20:00:45.661][INFO] [BoardDiscovery] 终止进程树，PID: 18248
+[2026-06-12 20:00:45.703][INFO] [BoardDiscovery] 资源已释放
+[2026-06-12 20:00:45.703][INFO] Arduino Extension 关闭
+──────────────────────────────────────────────────────────────────────
+
+======================================================================
+[2026-06-12 20:01:01.683] Arduino Extension 启动 (v0.2.1)
+  平台: win32 x64
+  VS Code: 1.124.2
+  Node: v24.15.0
+======================================================================
+[2026-06-12 20:01:01.685][INFO] 板卡缓存目录: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli
+[2026-06-12 20:01:01.685][INFO] [BoardListHistory] 已初始化，加载了 1 个板卡记录，0 个端口记录
+[2026-06-12 20:01:01.687][INFO] [BuildOutputWebview] 编译日志缓存路径: c:\ISLProjects\cansat-gcs\.vscode\build-output.log
+[2026-06-12 20:01:01.688][INFO] 刷新板卡列表...
+[2026-06-12 20:01:01.689][INFO] 获取板卡列表...
+[2026-06-12 20:01:01.690][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:01:01.719][INFO] 刷新板卡管理器...
+[2026-06-12 20:01:01.720][INFO] 获取已安装的平台列表...
+[2026-06-12 20:01:01.720][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:01:01.736][INFO] 获取已安装库列表...
+[2026-06-12 20:01:01.736][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:01:01.765][INFO] 已注册调试命令
+[2026-06-12 20:01:01.766][INFO] 正在检测 Arduino CLI...
+[2026-06-12 20:01:01.767][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:01:01.778][INFO] Arduino CLI 插件激活完成
+[2026-06-12 20:01:01.925][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:01:01.926][INFO] 使用全局共享下载目录: C:\Users\Lenovo\.arduino-cli-shared\downloads
+[2026-06-12 20:01:01.927][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core list --format json
+[2026-06-12 20:01:02.118][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:01:02.118][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib list --format json
+[2026-06-12 20:01:02.287][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:01:02.287][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:01:03.320][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:01:03.321][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:01:03.423][INFO] 找到 0 个已安装的库
+[2026-06-12 20:01:03.424][INFO] 找到 1 个已安装的平台
+[2026-06-12 20:01:03.439][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:01:03.475][INFO] CLI 路径已更新为: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:01:03.475][INFO] 使用内置 Arduino CLI: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:01:03.475][INFO] Arduino CLI 已就绪: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:01:03.475][INFO] 版本: 1.5.1
+[2026-06-12 20:01:03.476][INFO] 刷新板卡列表...
+[2026-06-12 20:01:03.476][INFO] 获取板卡列表...
+[2026-06-12 20:01:03.476][INFO] 获取板卡列表...
+[2026-06-12 20:01:03.477][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:01:03.484][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:01:03.492][INFO] [BoardDiscovery] 启动板卡实时发现...
+[2026-06-12 20:01:03.505][INFO] [BoardDiscovery] 监听进程已启动
+[2026-06-12 20:01:03.506][INFO] 启动时自动更新 Library Index...
+[2026-06-12 20:01:03.518][INFO] 已加载项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-12 20:01:03.518][INFO] 已加载项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-12 20:01:03.520][INFO] 从文件缓存获取板卡详情: arduino:avr:uno (0 个选项)
+[2026-06-12 20:01:03.521][INFO] 从项目配置加载板卡: arduino:avr:uno
+[2026-06-12 20:01:03.897][INFO] 找到 0 个端口
+[2026-06-12 20:01:03.897][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:01:03.898][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:01:04.685][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:01:04.686][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-12 20:01:05.304][INFO] 找到 0 个端口
+[2026-06-12 20:01:05.304][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:01:05.304][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:01:05.313][INFO] 找到 0 个端口
+[2026-06-12 20:01:05.313][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:01:05.314][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:01:06.106][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:01:06.106][INFO] 加载了 1 个平台，0 个端口
+[2026-06-12 20:01:06.107][INFO] 从内存缓存获取板卡详情: arduino:avr:uno
+[2026-06-12 20:01:06.107][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:01:06.108][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-12 20:06:12.573][INFO] Arduino CLI 插件正在停用...
+[2026-06-12 20:06:12.573][INFO] 串口监视器(Terminal)已释放
+[2026-06-12 20:06:12.574][INFO] 串口监视器(WebView)已释放
+[2026-06-12 20:06:12.574][INFO] [BoardDiscovery] 释放资源...
+[2026-06-12 20:06:12.574][INFO] [BoardDiscovery] 停止板卡发现监听
+[2026-06-12 20:06:12.574][INFO] [BoardDiscovery] 终止进程树，PID: 10484
+[2026-06-12 20:06:12.624][INFO] [BoardDiscovery] 资源已释放
+[2026-06-12 20:06:12.624][INFO] Arduino Extension 关闭
+──────────────────────────────────────────────────────────────────────
+[2026-06-12 20:06:12.649][FATAL] [Global] 未捕获的异常: Channel has been closed
+  Stack: Error: Channel has been closed
+	at r (file:///c:/Users/Lenovo/AppData/Local/Programs/Microsoft%20VS%20Code/6928394f91/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:541:3935)
+	at Object.info (file:///c:/Users/Lenovo/AppData/Local/Programs/Microsoft%20VS%20Code/6928394f91/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:541:4305)
+	at QT.info (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\json-language-features\client\dist\node\jsonClientMain.js:14:709)
+	at ChildProcess.<anonymous> (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\json-language-features\client\dist\node\jsonClientMain.js:19:48759)
+	at ChildProcess.emit (node:events:509:28)
+	at ChildProcess._handle.onexit (node:internal/child_process:295:12)
+
+======================================================================
+[2026-06-12 20:06:24.518] Arduino Extension 启动 (v0.2.1)
+  平台: win32 x64
+  VS Code: 1.124.2
+  Node: v24.15.0
+======================================================================
+[2026-06-12 20:06:24.519][INFO] 板卡缓存目录: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli
+[2026-06-12 20:06:24.519][INFO] [BoardListHistory] 已初始化，加载了 1 个板卡记录，0 个端口记录
+[2026-06-12 20:06:24.520][INFO] [BuildOutputWebview] 编译日志缓存路径: c:\ISLProjects\cansat-gcs\.vscode\build-output.log
+[2026-06-12 20:06:24.521][INFO] 刷新板卡列表...
+[2026-06-12 20:06:24.521][INFO] 获取板卡列表...
+[2026-06-12 20:06:24.521][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:06:24.539][INFO] 刷新板卡管理器...
+[2026-06-12 20:06:24.540][INFO] 获取已安装的平台列表...
+[2026-06-12 20:06:24.540][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:06:24.545][INFO] 获取已安装库列表...
+[2026-06-12 20:06:24.545][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:06:24.557][INFO] 已注册调试命令
+[2026-06-12 20:06:24.557][INFO] 正在检测 Arduino CLI...
+[2026-06-12 20:06:24.558][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:06:24.562][INFO] Arduino CLI 插件激活完成
+[2026-06-12 20:06:25.610][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:06:25.610][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:06:25.615][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:06:25.616][INFO] 使用全局共享下载目录: C:\Users\Lenovo\.arduino-cli-shared\downloads
+[2026-06-12 20:06:25.617][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core list --format json
+[2026-06-12 20:06:25.632][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:06:25.633][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib list --format json
+[2026-06-12 20:06:25.651][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:06:25.651][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:06:25.750][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:06:25.804][INFO] CLI 路径已更新为: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:06:25.804][INFO] 使用内置 Arduino CLI: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:06:25.804][INFO] Arduino CLI 已就绪: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:06:25.805][INFO] 版本: 1.5.1
+[2026-06-12 20:06:25.805][INFO] 刷新板卡列表...
+[2026-06-12 20:06:25.805][INFO] 获取板卡列表...
+[2026-06-12 20:06:25.805][INFO] 获取板卡列表...
+[2026-06-12 20:06:25.805][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:06:25.810][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:06:25.814][INFO] [BoardDiscovery] 启动板卡实时发现...
+[2026-06-12 20:06:25.825][INFO] [BoardDiscovery] 监听进程已启动
+[2026-06-12 20:06:25.826][INFO] 启动时自动更新 Library Index...
+[2026-06-12 20:06:25.828][INFO] 已加载项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-12 20:06:25.828][INFO] 已加载项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-12 20:06:25.833][INFO] 从文件缓存获取板卡详情: arduino:avr:uno (0 个选项)
+[2026-06-12 20:06:25.834][INFO] 从项目配置加载板卡: arduino:avr:uno
+[2026-06-12 20:06:26.483][INFO] 找到 0 个已安装的库
+[2026-06-12 20:06:26.531][INFO] 找到 1 个已安装的平台
+[2026-06-12 20:06:27.751][INFO] 找到 0 个端口
+[2026-06-12 20:06:27.752][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:06:27.752][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:06:27.777][INFO] 找到 0 个端口
+[2026-06-12 20:06:27.777][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:06:27.777][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:06:27.787][INFO] 找到 0 个端口
+[2026-06-12 20:06:27.787][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:06:27.787][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:06:28.449][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:06:28.450][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-12 20:06:28.450][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:06:28.451][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-12 20:06:28.456][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:06:28.456][INFO] 加载了 1 个平台，0 个端口
+[2026-06-12 20:06:28.457][INFO] 从内存缓存获取板卡详情: arduino:avr:uno
+[2026-06-12 20:09:39.459][FATAL] [Global] 未处理的 Promise Rejection: Unexpected end of JSON input
+  Stack: SyntaxError: Unexpected end of JSON input
+	at JSON.parse (<anonymous>)
+	at parseJSONFromBytes (node:internal/deps/undici/undici:4319:19)
+	at successSteps (node:internal/deps/undici/undici:6967:27)
+	at readAllBytes (node:internal/deps/undici/undici:5890:13)
+	at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-06-12 20:25:51.459][INFO] Arduino CLI 插件正在停用...
+[2026-06-12 20:25:51.460][INFO] 串口监视器(Terminal)已释放
+[2026-06-12 20:25:51.460][INFO] 串口监视器(WebView)已释放
+[2026-06-12 20:25:51.460][INFO] [BoardDiscovery] 释放资源...
+[2026-06-12 20:25:51.461][INFO] [BoardDiscovery] 停止板卡发现监听
+[2026-06-12 20:25:51.461][INFO] [BoardDiscovery] 终止进程树，PID: 18628
+[2026-06-12 20:25:51.491][INFO] [BoardDiscovery] 资源已释放
+[2026-06-12 20:25:51.491][INFO] Arduino Extension 关闭
+──────────────────────────────────────────────────────────────────────
+
+======================================================================
+[2026-06-12 20:26:20.270] Arduino Extension 启动 (v0.2.1)
+  平台: win32 x64
+  VS Code: 1.124.2
+  Node: v24.15.0
+======================================================================
+[2026-06-12 20:26:20.272][INFO] 板卡缓存目录: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli
+[2026-06-12 20:26:20.272][INFO] [BoardListHistory] 已初始化，加载了 1 个板卡记录，0 个端口记录
+[2026-06-12 20:26:20.274][INFO] [BuildOutputWebview] 编译日志缓存路径: c:\ISLProjects\cansat-gcs\.vscode\build-output.log
+[2026-06-12 20:26:20.275][INFO] 刷新板卡列表...
+[2026-06-12 20:26:20.275][INFO] 获取板卡列表...
+[2026-06-12 20:26:20.276][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:26:20.292][INFO] 刷新板卡管理器...
+[2026-06-12 20:26:20.293][INFO] 获取已安装的平台列表...
+[2026-06-12 20:26:20.293][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:26:20.298][INFO] 获取已安装库列表...
+[2026-06-12 20:26:20.298][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:26:20.310][INFO] 已注册调试命令
+[2026-06-12 20:26:20.310][INFO] 正在检测 Arduino CLI...
+[2026-06-12 20:26:20.311][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:26:20.316][INFO] Arduino CLI 插件激活完成
+[2026-06-12 20:26:21.484][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:26:21.485][INFO] 使用全局共享下载目录: C:\Users\Lenovo\.arduino-cli-shared\downloads
+[2026-06-12 20:26:21.486][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core list --format json
+[2026-06-12 20:26:21.502][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:26:21.502][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:26:21.518][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:26:21.518][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib list --format json
+[2026-06-12 20:26:21.536][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:26:21.536][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:26:21.702][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-12 20:26:21.894][INFO] CLI 路径已更新为: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:26:21.894][INFO] 使用内置 Arduino CLI: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:26:21.894][INFO] Arduino CLI 已就绪: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-12 20:26:21.894][INFO] 版本: 1.5.1
+[2026-06-12 20:26:21.894][INFO] 刷新板卡列表...
+[2026-06-12 20:26:21.894][INFO] 获取板卡列表...
+[2026-06-12 20:26:21.894][INFO] 获取板卡列表...
+[2026-06-12 20:26:21.895][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:26:21.898][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-12 20:26:21.903][INFO] [BoardDiscovery] 启动板卡实时发现...
+[2026-06-12 20:26:21.911][INFO] [BoardDiscovery] 监听进程已启动
+[2026-06-12 20:26:21.912][INFO] 启动时自动更新 Library Index...
+[2026-06-12 20:26:21.913][INFO] 已加载项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-12 20:26:21.913][INFO] 已加载项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-12 20:26:21.916][INFO] 从文件缓存获取板卡详情: arduino:avr:uno (0 个选项)
+[2026-06-12 20:26:21.917][INFO] 从项目配置加载板卡: arduino:avr:uno
+[2026-06-12 20:26:22.248][INFO] 找到 1 个已安装的平台
+[2026-06-12 20:26:22.260][INFO] 找到 0 个已安装的库
+[2026-06-12 20:26:23.650][INFO] 找到 0 个端口
+[2026-06-12 20:26:23.651][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:26:23.651][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:26:23.684][INFO] 找到 0 个端口
+[2026-06-12 20:26:23.685][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:26:23.685][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:26:23.697][INFO] 找到 0 个端口
+[2026-06-12 20:26:23.697][INFO] 获取所有已安装的板卡...
+[2026-06-12 20:26:23.697][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-12 20:26:24.380][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:26:24.380][INFO] 加载了 1 个平台，0 个端口
+[2026-06-12 20:26:24.381][INFO] 从内存缓存获取板卡详情: arduino:avr:uno
+[2026-06-12 20:26:24.386][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:26:24.386][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-12 20:26:24.387][INFO] 找到 27 个已安装的板卡
+[2026-06-12 20:26:24.387][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-12 21:21:30.226][INFO] Arduino CLI 插件正在停用...
+[2026-06-12 21:21:30.226][INFO] 串口监视器(Terminal)已释放
+[2026-06-12 21:21:30.226][INFO] 串口监视器(WebView)已释放
+[2026-06-12 21:21:30.227][INFO] [BoardDiscovery] 释放资源...
+[2026-06-12 21:21:30.227][INFO] [BoardDiscovery] 停止板卡发现监听
+[2026-06-12 21:21:30.227][INFO] [BoardDiscovery] 终止进程树，PID: 19824
+[2026-06-12 21:21:30.246][INFO] [BoardDiscovery] 资源已释放
+[2026-06-12 21:21:30.247][INFO] Arduino Extension 关闭
+──────────────────────────────────────────────────────────────────────
+[2026-06-12 21:21:30.275][FATAL] [Global] 未捕获的异常: Channel has been closed
+  Stack: Error: Channel has been closed
+	at r (file:///c:/Users/Lenovo/AppData/Local/Programs/Microsoft%20VS%20Code/6928394f91/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:541:3935)
+	at Object.info (file:///c:/Users/Lenovo/AppData/Local/Programs/Microsoft%20VS%20Code/6928394f91/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:541:4305)
+	at QT.info (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\json-language-features\client\dist\node\jsonClientMain.js:14:709)
+	at ChildProcess.<anonymous> (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\json-language-features\client\dist\node\jsonClientMain.js:19:48759)
+	at ChildProcess.emit (node:events:509:28)
+	at ChildProcess._handle.onexit (node:internal/child_process:295:12)
+
+======================================================================
+[2026-06-15 15:01:06.501] Arduino Extension 启动 (v0.2.1)
+  平台: win32 x64
+  VS Code: 1.124.2
+  Node: v24.15.0
+======================================================================
+[2026-06-15 15:01:06.503][INFO] 板卡缓存目录: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli
+[2026-06-15 15:01:06.503][INFO] [BoardListHistory] 已初始化，加载了 1 个板卡记录，0 个端口记录
+[2026-06-15 15:01:06.505][INFO] [BuildOutputWebview] 编译日志缓存路径: c:\ISLProjects\cansat-gcs\.vscode\build-output.log
+[2026-06-15 15:01:06.506][INFO] 刷新板卡列表...
+[2026-06-15 15:01:06.506][INFO] 获取板卡列表...
+[2026-06-15 15:01:06.506][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-15 15:01:06.527][INFO] 刷新板卡管理器...
+[2026-06-15 15:01:06.528][INFO] 获取已安装的平台列表...
+[2026-06-15 15:01:06.528][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-15 15:01:06.531][INFO] 获取已安装库列表...
+[2026-06-15 15:01:06.532][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-15 15:01:06.545][INFO] 已注册调试命令
+[2026-06-15 15:01:06.546][INFO] 正在检测 Arduino CLI...
+[2026-06-15 15:01:06.547][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-15 15:01:06.551][INFO] Arduino CLI 插件激活完成
+[2026-06-15 15:01:08.162][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-15 15:01:08.163][INFO] 使用全局共享下载目录: C:\Users\Lenovo\.arduino-cli-shared\downloads
+[2026-06-15 15:01:08.178][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli lib list --format json
+[2026-06-15 15:01:08.191][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-15 15:01:08.191][INFO] 验证 Arduino CLI 路径: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-15 15:01:08.195][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-15 15:01:08.195][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-15 15:01:08.212][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-15 15:01:08.212][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli core list --format json
+[2026-06-15 15:01:08.401][INFO] Arduino CLI 验证成功: v1.5.1
+[2026-06-15 15:01:08.434][INFO] CLI 路径已更新为: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-15 15:01:08.434][INFO] 使用内置 Arduino CLI: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-15 15:01:08.434][INFO] Arduino CLI 已就绪: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe
+[2026-06-15 15:01:08.434][INFO] 版本: 1.5.1
+[2026-06-15 15:01:08.434][INFO] 刷新板卡列表...
+[2026-06-15 15:01:08.435][INFO] 获取板卡列表...
+[2026-06-15 15:01:08.435][INFO] 获取板卡列表...
+[2026-06-15 15:01:08.435][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-15 15:01:08.441][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-15 15:01:08.449][INFO] [BoardDiscovery] 启动板卡实时发现...
+[2026-06-15 15:01:08.460][INFO] [BoardDiscovery] 监听进程已启动
+[2026-06-15 15:01:08.465][INFO] 启动时自动更新 Library Index...
+[2026-06-15 15:01:08.484][INFO] 已加载项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-15 15:01:08.485][INFO] 已加载项目配置: c:\ISLProjects\cansat-gcs\.arduino\config.json
+[2026-06-15 15:01:08.487][INFO] 获取板卡详情: arduino:avr:uno...
+[2026-06-15 15:01:08.487][INFO] 从项目配置加载板卡: arduino:avr:uno
+[2026-06-15 15:01:08.514][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board details --fqbn arduino:avr:uno --format json
+[2026-06-15 15:01:09.758][INFO] 找到 1 个已安装的平台
+[2026-06-15 15:01:09.953][INFO] 找到 0 个已安装的库
+[2026-06-15 15:01:09.953][INFO] 板卡 Arduino UNO 有 0 个配置选项
+[2026-06-15 15:01:09.954][INFO] 板卡详情已缓存: c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino_avr_uno.json
+[2026-06-15 15:01:09.954][INFO] 获取板卡详情成功: Arduino UNO, 0 个配置选项
+[2026-06-15 15:01:11.424][INFO] [BoardDiscovery] 端口添加: COM3 - Serial Port
+[2026-06-15 15:01:11.424][INFO] [BoardDiscovery] 检测到端口变化，刷新板卡列表
+[2026-06-15 15:01:11.424][INFO] 刷新板卡列表...
+[2026-06-15 15:01:11.424][INFO] 获取板卡列表...
+[2026-06-15 15:01:11.424][INFO] [BoardDiscovery] 端口添加: COM4 - Serial Port
+[2026-06-15 15:01:11.424][INFO] [BoardDiscovery] 检测到端口变化，刷新板卡列表
+[2026-06-15 15:01:11.424][INFO] 刷新板卡列表...
+[2026-06-15 15:01:11.424][INFO] 获取板卡列表...
+[2026-06-15 15:01:11.425][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-15 15:01:11.430][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board list --format json
+[2026-06-15 15:01:11.546][INFO] 找到 2 个端口
+[2026-06-15 15:01:11.546][INFO] 获取所有已安装的板卡...
+[2026-06-15 15:01:11.547][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-15 15:01:11.561][INFO] 找到 2 个端口
+[2026-06-15 15:01:11.562][INFO] 获取所有已安装的板卡...
+[2026-06-15 15:01:11.562][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-15 15:01:11.566][INFO] 找到 2 个端口
+[2026-06-15 15:01:11.567][INFO] 获取所有已安装的板卡...
+[2026-06-15 15:01:11.567][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-15 15:01:12.807][INFO] 找到 27 个已安装的板卡
+[2026-06-15 15:01:12.808][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-15 15:01:12.808][INFO] 找到 27 个已安装的板卡
+[2026-06-15 15:01:12.809][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-15 15:01:12.809][INFO] 找到 27 个已安装的板卡
+[2026-06-15 15:01:12.809][INFO] 加载了 1 个平台，2 个端口
+[2026-06-15 15:01:12.809][INFO] 从内存缓存获取板卡详情: arduino:avr:uno
+[2026-06-15 15:01:13.368][INFO] 找到 2 个端口
+[2026-06-15 15:01:13.368][INFO] 获取所有已安装的板卡...
+[2026-06-15 15:01:13.369][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-15 15:01:13.379][INFO] 找到 2 个端口
+[2026-06-15 15:01:13.379][INFO] 获取所有已安装的板卡...
+[2026-06-15 15:01:13.379][INFO] 执行命令: "c:\Users\Lenovo\AppData\Roaming\Code\User\globalStorage\oakiot.vscode-arduino-cli\arduino-cli\arduino-cli.exe" --config-dir c:\ISLProjects\cansat-gcs\.arduino-cli board listall --format json
+[2026-06-15 15:01:13.910][INFO] 找到 27 个已安装的板卡
+[2026-06-15 15:01:13.910][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-15 15:01:13.912][INFO] 找到 27 个已安装的板卡
+[2026-06-15 15:01:13.913][INFO] 加载了 1 个平台，共 27 个板卡
+[2026-06-15 15:01:55.539][FATAL] [Global] 未处理的 Promise Rejection: Unexpected end of JSON input
+  Stack: SyntaxError: Unexpected end of JSON input
+	at JSON.parse (<anonymous>)
+	at parseJSONFromBytes (node:internal/deps/undici/undici:4319:19)
+	at successSteps (node:internal/deps/undici/undici:6967:27)
+	at readAllBytes (node:internal/deps/undici/undici:5890:13)
+	at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-06-15 15:30:56.574][FATAL] [Global] 未捕获的异常: e is not iterable
+
+TypeError: e is not iterable
+	at D3e.setItems (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:19963)
+	at gp._computeFn (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:19702)
+	at gp._recompute (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:11921)
+	at gp.get (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:11255)
+	at gp.reportChanges (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:497)
+	at B3e.endUpdate (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:19461)
+	at R_n (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:19179)
+	at gp.recomputeInitiallyAndOnChange (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:1092)
+	at NP.init (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:3191:1663)
+  Stack: Error: e is not iterable
+
+TypeError: e is not iterable
+	at D3e.setItems (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:19963)
+	at gp._computeFn (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:19702)
+	at gp._recompute (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:11921)
+	at gp.get (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:11255)
+	at gp.reportChanges (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:497)
+	at B3e.endUpdate (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:19461)
+	at R_n (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:19179)
+	at gp.recomputeInitiallyAndOnChange (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:1167:1092)
+	at NP.init (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:3191:1663)
+	at Timeout._onTimeout (c:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\6928394f91\resources\app\extensions\copilot\dist\extension.js:3:12)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)

@@ -1,0 +1,5 @@
+{
+  "board": "arduino:avr:uno",
+  "output": ".arduino/build",
+  "sketch": "telemetry_simulator.ino"
+}
